@@ -8,8 +8,8 @@ import (
 // 文本消息的处理函数
 func Echo(w weixin.ResponseWriter, r *weixin.Request) {
 	txt := r.Content			// 获取用户发送的消息
-	w.ReplyText(txt)			// 回复一条文本消息
-	w.PostText("reply: " + txt)	// 发送一条文本消息
+	reply := "已收到消息：" + txt + "，谢谢关注！"
+	w.ReplyText(reply)			// 回复一条文本消息
 }
 
 // 关注事件的处理函数
