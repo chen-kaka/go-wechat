@@ -3,12 +3,13 @@ package main
 import (
 	"github.com/wizjin/weixin"
 	"net/http"
+	"go-wechat/processor"
 )
 
 // 文本消息的处理函数
 func Echo(w weixin.ResponseWriter, r *weixin.Request) {
 	txt := r.Content			// 获取用户发送的消息
-	reply := "已收到消息：" + txt + "，谢谢关注！"
+	reply := processor.ProcessText(txt)
 	w.ReplyText(reply)			// 回复一条文本消息
 }
 

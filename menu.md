@@ -1,0 +1,56 @@
+
+eg:
+```
+{
+     "button":[
+     {
+          "type":"click",
+          "name":"News",
+          "key":"V1001_TODAY_MUSIC"
+      },
+      {
+           "name":"菜单",
+           "sub_button":[
+           {
+               "type":"view",
+               "name":"搜索",
+               "url":"http://www.soso.com/"
+            },
+            {
+                 "type":"miniprogram",
+                 "name":"wxa",
+                 "url":"http://mp.weixin.qq.com",
+                 "appid":"wx286b93c14bbf93aa",
+                 "pagepath":"pages/lunar/index.html"
+             },
+            {
+               "type":"click",
+               "name":"赞一下我们",
+               "key":"V1001_GOOD"
+            }]
+       }]
+ }
+```
+
+conf:
+
+```
+{
+     "button":[
+     {
+          "type":"click",
+          "name":"News",
+          "key":"MENU_CLICK_NEWS"
+      },
+      {
+           "type":"view",
+           "name":"基金",
+           "url":"http://fund.xy-kaka.cn"
+       },
+       {
+           "type":"click",
+           "name":"博客",
+           "url":"https://chen-kaka.github.io"
+       }]
+ }
+```
